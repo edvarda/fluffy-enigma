@@ -9,7 +9,6 @@ var utilCpu = require('util.cpu');
 var modelBodies = require('model.Bodies');
 
 module.exports.loop = function () {
-
     // Testing
     
     // Handy temp
@@ -57,7 +56,6 @@ module.exports.loop = function () {
                 upgraders.length + '   Harvesters: ' + harvesters.length + 
                 '   Miners: ' + miners.length + '   Fixers: ' + fixers.length);
     }
-
     for(var name in Game.creeps) {
         var creep = Game.creeps[name];
         if(creep.memory.role == 'harvester') {

@@ -27,7 +27,7 @@ var bodies = {
 		blueprint: [CARRY,CARRY,MOVE,MOVE]
 	},
 	'builder': {
-		blueprint: [WORK,WORK,CARRY,CARRY,MOVE,MOVE,CARRY,MOVE]
+		blueprint: [WORK,CARRY,CARRY,MOVE,MOVE]
 	},
 	'upgrader': {
 		blueprint: [WORK,WORK,CARRY,CARRY,MOVE,MOVE,CARRY,MOVE]
