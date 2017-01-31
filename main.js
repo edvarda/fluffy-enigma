@@ -10,7 +10,7 @@ var modelBodies = require('model.Bodies');
 
 module.exports.loop = function () {
 
-    // Random debug
+    // Testing
     
     // Handy temp
     var spawn = Game.spawns['Spawn1'];
