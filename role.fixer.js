@@ -16,8 +16,10 @@ var roleFixer = {
 	    if(creep.memory.fixing) {
 	        var targets = creep.room.find(FIND_CONSTRUCTION_SITES);
 	        var containers = creep.room.find(FIND_STRUCTURES, {
-                filter: (i) => i.structureType == STRUCTURE_CONTAINER &&
-                (i.hits < i.hitsMax)
+                filter: (i) => (
+                    ((i.structureType == STRUCTURE_CONTAINER) || (i.structureType == STRUCTURE_ROAD) && i.hits < i.hitsMax) || 
+                    (i.structureType == STRUCTURE_RAMPART || i.structureType == STRUCTURE_WALL) && (i.hits < 1000)
+                )
             });
 
             if(containers.length>0) {

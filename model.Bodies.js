@@ -24,19 +24,23 @@ cost : function() {
 
 var bodies = {
 	'harvester': {
-		blueprint: [CARRY,CARRY,MOVE,MOVE]
+		blueprint: [CARRY,CARRY,CARRY,MOVE,MOVE,MOVE]
 	},
 	'builder': {
-		blueprint: [WORK,CARRY,CARRY,MOVE,MOVE]
+		blueprint: [WORK,WORK,CARRY,CARRY,MOVE,MOVE]
 	},
 	'upgrader': {
-		blueprint: [WORK,WORK,CARRY,CARRY,MOVE,MOVE,CARRY,MOVE]
+		blueprint: [WORK,WORK,CARRY,CARRY,CARRY,MOVE,MOVE,MOVE,MOVE]
 	},
 	'miner': {
-		blueprint: [WORK,WORK,MOVE]
+		blueprint: [WORK,WORK,WORK,WORK,MOVE]
 	},
 	'basic': {
 		blueprint: [WORK,CARRY,MOVE]
+	},
+	'defender': {
+		blueprint: [ATTACK,ATTACK,TOUGH,TOUGH,MOVE,MOVE,MOVE,MOVE]
+
 	}
 };
 
